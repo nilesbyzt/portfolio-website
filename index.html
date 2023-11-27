@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Selin Portfolio Website</title>
+  <link rel="stylesheet" href="styles.css">
+  <script src="https://kit.fontawesome.com/9fec7f05c2.js" crossorigin="anonymous"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;1,700&display=swap" rel="stylesheet">
+</head>
+<body>
+<div id="header">
+  <div class="container">
+    <nav>
+      <img src="images/logo.png" class="logo";>
+      <ul id="sidemenu">
+        <li><a href="#header">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <!-- <li><a href="#services">Services</a></li> -->
+        <li><a href="#portfolio">Portfolio</a></li>
+        <li><a href="#contact">Contact</a></li>
+        <i class="fa-solid fa-xmark" onclick="closemenu()"></i>
+      </ul>
+      <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+    </nav>
+    <div class="header-text">
+      <p>Software Engineer</p>
+      <h1>Hi, I'm <span>Selin</span><br>Bayazit from Seattle</h1>
+    </div>
+  </div>
+</div>
+<!--about-->
+<div id="about">
+  <div class="container">
+    <div class="row">
+      <div class="about-col-1">
+        <img src="images/users.png">
+      </div>
+      <div class="about-col-2">
+        <h1 class="sub-title">About Me</h1>
+        <p><br>A driven and adaptable Junior Software Engineer passionate 
+          about crafting robust, user-centric solutions. With a foundation 
+          in programming languages like Java, C#, and C++, I thrive on problem-solving 
+          and continuously honing my skills. My journey is a blend of academic 
+          learning and hands-on projects, where I've cultivated a knack for efficient 
+          coding and a love for exploring new technologies. I'm eager to contribute my 
+          enthusiasm and skills to innovative projects that push boundaries and make a meaningful impact. </p>
+
+          <div class="tab-titles">
+            <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+            <p class="tab-links" onclick="opentab('experience')">Experience</p>
+            <p class="tab-links" onclick="opentab('education')">Education</p>
+          </div>
+          <div class="tab-contents active-tab" id="skills">
+            <ul>
+              <li><span></span>Java, C#, C++, Javascript, HTML</li>
+              <li><span></span>CSS, PHP, SpringBoot, React, </li>
+              <li><span></span>MongoDB, MySQL, Postman</li>
+            </ul>
+          </div>
+          <div class="tab-contents" id="experience">
+            <ul>
+              <li><span>2023-Current</span><br>KeelWorks Foundation Oak Harbor, WA Team Leader / Back-End Developer</li>
+              <li><span>2017</span><br>Turkish Economy Bank Istanbul, Turkey Credit Administration Intern</li>
+              <li><span>2015</span><br>Gunes Construction Company Tekirdag, Turkey Accounting Intern</li>
+            </ul>
+          </div>
+          <div class="tab-contents" id="education">
+            <ul>
+              <li><span>2023</span><br>AAS Lake Washington Institue of Technology-Computer Science</li>
+              <li><span>2018</span><br>BS Marmara University-Economics</li>
+            </ul>
+          </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-------------services-------------->
+<!-- <div id="services">
+  <div class="container">
+    <h1 class="sub-title">My Services</h1>
+    <div class="services-list">
+      <div>
+        <i class="fa-solid fa-code"></i>
+        <h2>Email Creation</h2>
+        <p>Designed and developed a Java Swing application facilitating the creation of company email accounts through user input validation. The application dynamically generates email addresses based on provided information and concurrently stores data in a MySQL database</p>
+        <a href="#">Learn more</a>
+      </div>
+      <div>
+        <i class="fa-solid fa-crop-simple"></i>
+        <h2>Movie Review</h2>
+        <p>Designed full-stack application, utilizing MongoDB for data management, Java and Spring Boot for a robust backend, and React for dynamic frontends. Expertly employed Postman for API testing, ensuring the application's reliability and performance. Developed a versatile movie review application with a loosely coupled architecture, facilitating independent evolution of client and server code and enhancing flexibility and adaptability for real-world scenarios.</p>
+        <a href="#">Learn more</a>
+      </div>
+      <div>
+        <i class="fa-brands fa-app-store-ios"></i>
+        <h2>Family Cash Card</h2>
+        <p>Designed, developed, and deployed a Family Cash Card backend application, utilizing Java and Spring Boot for the backend with a focus on test driven development (TDD), optimizing data management through the H2 database..</p>
+        <a href="#">Learn more</a>
+      </div>
+    </div>
+  </div>
+</div> -->
+
+<!-- ------------------portfolio------------------ -->
+
+<div id="portfolio">
+    <div class="container">
+      <h1 class="sub-title">My Work</h1>
+      <div class="work-list">
+        <div class="work">
+          <img src="images/avatar.png">
+          <div class="layer">
+            <h3>Movie Review</h3>
+            <p>Designed full-stack application, utilizing MongoDB for data management, Java and Spring Boot for a robust backend, and React for dynamic frontends. Expertly employed Postman for API testing, ensuring the application's reliability and performance. Developed a versatile movie review application with a loosely coupled architecture, facilitating independent evolution of client and server code and enhancing flexibility and adaptability for real-world scenarios.</p>
+            <a href="https://github.com/nilesbyzt/movie-gold-v1"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+          </div>
+        </div>
+        <div class="work">
+          <img src="images/cashcard.png">
+          <div class="layer">
+            <h3>Family Cash Card</h3>
+            <p>Designed, developed, and deployed a Family Cash Card backend application, utilizing Java and Spring Boot for the backend with a focus on test driven development (TDD), optimizing data management through the H2 database.</p>
+            <a href="https://github.com/nilesbyzt/cashcard-backend"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+          </div>
+        </div>
+        <div class="work">
+          <img src="images/email.png">
+          <div class="layer">
+            <h3>Email Creation</h3>
+            <p>Designed and developed a Java Swing application facilitating the creation of company email accounts through user input validation. The application dynamically generates email addresses based on provided information and concurrently stores data in a MySQL database.</p>
+            <a href="https://github.com/nilesbyzt/email-creation-java-swing-app"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+          </div>
+        </div>
+      </div>
+      <a href="https://github.com/nilesbyzt" class="btn">See More</a>
+    </div>
+</div>
+
+
+<!-- ---------------contact---------------- -->
+
+<div id="contact">
+  <div class="container">
+    <div class="row">
+      <div class="contact-left">
+        <h1 class="sub-title">Contact Me</h1>
+        <p><i class="fa-solid fa-paper-plane"></i></i>selinbayazit@gmail.com</p>
+        <p><i class="fa-solid fa-phone-volume"></i>+14255538006</p>
+        <div class="social-icons">
+          <a href="https://www.facebook.com/ByztSelin/"><i class="fa-brands fa-facebook"></i></a>
+          <a href="https://twitter.com/selinbyzt"><i class="fa-brands fa-twitter-square"></i></a>
+          <a href="https://www.instagram.com/selinbayazit/"><i class="fa-brands fa-instagram"></i></a>
+          <a href="https://www.linkedin.com/in/selin-bayazit/"><i class="fa-brands fa-linkedin"></i></a>
+        </div>
+        <a href="images/Resume-Selin.pdf" class="btn btn2">Download CV</a>
+      </div>
+      <div class="contact-right">
+        <form method="post" action="" name="contact-form">
+          <input type="text" name="Name" placeholder="Your Name" required>
+          <input type="email" name="Email" placeholder="Your Email" required>
+          <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+          <button type="submit" class="btn btn2">Submit</button>
+        </form>
+        <span id="msg"></span>
+      </div>
+    </div>
+  </div>
+  <div class="copyright">
+    <p>Copyright <span>&#169;</span> Selin 2023</p>
+  </div>
+</div>
+
+
+<script>
+  var tablinks = document.getElementsByClassName("tab-links");
+  var tabcontents = document.getElementsByClassName("tab-contents");
+
+  function opentab(tabname){
+    for(tablink of tablinks){
+      tablink.classList.remove("active-link");
+    }
+    for(tabcontent of tabcontents){
+      tabcontent.classList.remove("active-tab");
+    }
+
+    event.currentTarget.classList.add("active-link");
+    document.getElementById(tabname).classList.add("active-tab")
+  }
+</script>
+
+<script>
+  var sidemenu = document.getElementById("sidemenu");
+
+  function openmenu(){
+    sidemenu.style.right = "0";
+  }
+
+  function closemenu(){
+    sidemenu.style.right = "-200px";
+  }
+</script>
+
+<script>
+  const scriptURL = 'https://script.google.com/macros/s/AKfycbzt6H0qsPzWfXbGTsjNNWmOIuI8HbKGq8_4C94hr1xpfEy369dFLqUyuYqywv9dONQ9/exec'
+  const form = document.forms['contact-form']
+  const msg=document.getElementById("msg")
+
+  form.addEventListener('submit', e => {
+    e.preventDefault()
+    fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+    .then(response => {
+        msg.innerHTML = "Message sent successfully!"
+        setTimeout(function(){
+          msg.innerHTML=""
+        }, 5000)
+        form.reset()
+      })
+  })
+</script>
+  
+</body>
+</html>
